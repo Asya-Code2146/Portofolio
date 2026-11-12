@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Amrina Rasyada - Future Web Developer & AI Software Engineer.">
+<meta name="author" content="Amrina Rasyada">
+<meta name="theme-color" content="#071330">
+<title>Amrina Rasyada — Future Web Developer &amp; AI Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2338bdf8'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div id="intro-overlay" aria-hidden="true">
+  <canvas id="intro-canvas"></canvas>
+  <button type="button" class="intro-skip">KLIK UNTUK LEWATI</button>
+</div>
+
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="grain-overlay" aria-hidden="true"></div>
+<canvas id="galaxy-canvas" aria-hidden="true"></canvas>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<nav id="navbar">
+  <div class="nav-brand">
+    <span class="brand-mark">AR</span>
+    <div>
+      <div class="brand-name">AMRINA RASYADA</div>
+      <div class="brand-sub">Future Web Developer &amp; AI Engineer</div>
+    </div>
+  </div>
+  <ul class="nav-menu">
+    <li><a href="#hero" class="nav-link active">HOME</a></li>
+    <li><a href="#about" class="nav-link">ABOUT</a></li>
+    <li><a href="#stack" class="nav-link">STACK</a></li>
+    <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+    <li><a href="#hobbies" class="nav-link">HOBBIES</a></li>
+    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+  </ul>
+  <button type="button" class="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="mobile-menu">
+  <a href="#hero">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#stack">STACK</a>
+  <a href="#projects">PROJECTS</a>
+  <a href="#hobbies">HOBBIES</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <h1 class="hero-title reveal">
+          <span class="chrome-text">AMRINA</span>
+          <span class="chrome-text">RASYADA</span>
+        </h1>
+        <p class="hero-subtitle reveal">
+          Future Web Developer <span class="sub-sep">|</span> <em>AI &amp; Software Engineer</em>
+        </p>
+        <p class="hero-desc reveal">
+          Membangun masa depan digital dengan sistem kecerdasan buatan terapan, aplikasi mobile tangguh, dan arsitektur web modern yang estetis, cepat, serta berdaya guna tinggi.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary magnetic">
+            <span>LIHAT SEMUA PROYEK</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost magnetic">
+            <span>HUBUNGI SAYA</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat-item">
+            <span class="stat-num stat-num-accent" data-count="15">15</span>
+            <span class="stat-label">Repositori GitHub</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="14">14</span>
+            <span class="stat-label">Tech Stack Utama</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">XI</span>
+            <span class="stat-label">Kelas di SMKN 5 Telkom</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="hero-portrait-wrap" data-tilt>
+          <img src="assets/1.jpeg" alt="Amrina Rasyada" class="hero-portrait-img">
+          <div class="portrait-overlay-gradient"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="section-header reveal">
+      <span class="section-tag">01 / ABOUT ME</span>
+      <h2 class="section-title chrome-text">ABOUT <em>ME</em></h2>
+      <p class="section-sub">Mengenal lebih dekat perjalanan akademis, dedikasi belajar, dan visi teknologi masa depan.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-left-col reveal">
+        <p class="about-lead">
+          Saya <strong>Amrina Rasyada</strong> — siswi yang sedang menempuh pendidikan duduk di <strong>SMKN 5 Telkom Banda Aceh</strong> di bangku <strong>Kelas 11</strong>, dengan antusiasme mendalam pada persimpangan antara <em>Artificial Intelligence</em>, <em>Web Architecture</em>, dan <em>Cross-Platform Applications</em>.
+        </p>
+        <p>
+          Bagi saya, pemrograman adalah sarana memecahkan persoalan dunia nyata secara elegan. Mulai dari membangun sistem pertahanan siber otonom untuk hackathon nasional, sistem deteksi penipuan online berbasis AI, hingga PWA tangguh untuk situasi darurat bencana gempa, setiap karya dirancang dengan komitmen pada performa dan dampak sosial.
+        </p>
+        <p>
+          Melalui kurikulum vokasi teknologi informasi berstandar tinggi di SMKN 5 Telkom Banda Aceh, saya terus memperdalam algoritma, struktur data modern, dan metodologi pengembangan perangkat lunak siap industri.
+        </p>
+
+        <div class="about-meta">
+          <div class="meta-box" data-tilt>
+            <span class="meta-box-label">PENDIDIKAN</span>
+            <span class="meta-box-val">SMKN 5 Telkom (Kelas 11)</span>
+          </div>
+          <div class="meta-box" data-tilt>
+            <span class="meta-box-label">FOKUS UTAMA</span>
+            <span class="meta-box-val">AI · Web · Mobile Apps</span>
+          </div>
+          <div class="meta-box" data-tilt>
+            <span class="meta-box-label">DOMISILI</span>
+            <span class="meta-box-val">Banda Aceh, Indonesia</span>
+          </div>
+          <div class="meta-box" data-tilt>
+            <span class="meta-box-label">STATUS</span>
+            <span class="meta-box-val">Siap Kolaborasi &amp; Proyek</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right-col reveal">
+        <div class="education-card" data-tilt>
+          <div class="education-header">
+            <div class="edu-icon-badge">🎓</div>
+            <div>
+              <div class="edu-school-name">SMKN 5 Telkom Banda Aceh</div>
+              <div class="edu-grade-tag">Duduk di Bangku Kelas 11 · Rekayasa Perangkat Lunak &amp; TI</div>
+            </div>
+          </div>
+          <p class="edu-desc">
+            Menempuh pendidikan vokasi teknologi informasi dengan pendalaman intensif pada pengembangan sistem perangkat lunak, arsitektur basis data, dan implementasi teknologi cerdas.
+          </p>
+          <div class="edu-tracks-list">
+            <div class="edu-track-pill">⚡ Full-Stack Web Development</div>
+            <div class="edu-track-pill">🤖 AI &amp; Machine Learning</div>
+            <div class="edu-track-pill">📱 Mobile (Flutter &amp; Capacitor)</div>
+            <div class="edu-track-pill">🛡️ Cyber Defense &amp; PWA Systems</div>
+          </div>
+        </div>
+
+        <div class="visual-frame" data-tilt>
+          <div class="code-dots">
+            <span style="background:#ff5f56"></span>
+            <span style="background:#ffbd2e"></span>
+            <span style="background:#27c93f"></span>
+          </div>
+          <div class="visual-code">
+            <pre><span class="c-key">const</span> <span class="c-fn">engineerProfile</span> = {
+  <span class="c-prop">nama</span>: <span class="c-str">'Amrina Rasyada'</span>,
+  <span class="c-prop">peran</span>: <span class="c-str">'Future Web Developer & AI Engineer'</span>,
+  <span class="c-prop">coreSkills</span>: [<span class="c-str">'Next.js'</span>, <span class="c-str">'React'</span>, <span class="c-str">'Flutter'</span>, <span class="c-str">'Python'</span>, <span class="c-str">'PHP'</span>],
+  <span class="c-prop">passions</span>: [<span class="c-str">'Basket'</span>, <span class="c-str">'Gitar'</span>, <span class="c-str">'Membaca'</span>, <span class="c-str">'Coding'</span>, <span class="c-str">'Mandarin'</span>],
+  <span class="c-prop">motto</span>: <span class="c-str">'Inovasi tanpa batas, kode berdaya guna'</span>
+};</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="section stack">
+    <div class="section-header reveal">
+      <span class="section-tag">02 / TECH ARSENAL</span>
+      <h2 class="section-title chrome-text">TECH <em>ARSENAL &amp; SKILLS</em></h2>
+      <p class="section-sub">Kumpulan bahasa pemrograman, framework, dan toolset modern yang saya kuasai secara komprehensif.</p>
+    </div>
+
+    <div class="stack-categories">
+      <div>
+        <div class="stack-category-title reveal">CORE LANGUAGES</div>
+        <div class="stack-grid">
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#E34F26" d="M19 116.5L9.6 11.5h108.8l-9.4 105z"/><path fill="#EF652A" d="M64 108.9l36.5-10.1 7.8-87.3H64z"/><path fill="#EBEBEB" d="M64 52.8H46.4l-1.2-13.7H64V25.4H31.5l3.6 40.8H64zm0 33.3l-.2.1-16.7-4.5-1.1-12H32.4l2.1 23.5 29.5 8.2z"/><path fill="#fff" d="M64 52.8h17.6l-1.6 18.5-16 4.3v13.6l29.4-8.2 3.8-41.9H64zm0-27.4v13.7h31.3l1.2-13.7z"/></svg>
+            </div>
+            <span class="stack-name">HTML5</span>
+            <span class="stack-tag">Semantic Web &amp; Canvas</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#1572B6" d="M19 116.5L9.6 11.5h108.8l-9.4 105z"/><path fill="#33A9DC" d="M64 108.9l36.5-10.1 7.8-87.3H64z"/><path fill="#EBEBEB" d="M64 52.8H46.4l-1.2-13.7H64V25.4H31.5l3.6 40.8H64zm0 33.3l-.2.1-16.7-4.5-1.1-12H32.4l2.1 23.5 29.5 8.2z"/><path fill="#fff" d="M64 52.8h17.6l-1.6 18.5-16 4.3v13.6l29.4-8.2 3.8-41.9H64zm0-27.4v13.7h31.3l1.2-13.7z"/></svg>
+            </div>
+            <span class="stack-name">CSS3</span>
+            <span class="stack-tag">Modern Styling &amp; Layouts</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><rect width="128" height="128" rx="20" fill="#F7DF1E"/><path d="M37.5 104.5c2.4 3.9 6.2 6.7 11.8 6.7 8.3 0 13.6-4.6 13.6-14.7V48H50.5v48.2c0 4.3-1.9 6.2-5.4 6.2-3 0-5.3-2-6.6-4.9zm44.2 6.4c6.2 3.7 14.1 6.2 21.6 6.2 12.3 0 20.3-6.2 20.3-17.4 0-10.1-6.1-14.5-16.4-19-6.9-3.1-9.9-5.4-9.9-9.5 0-3.6 2.8-6.1 7.6-6.1 4.5 0 8.7 1.7 12 3.9l3.5-10.4c-3.6-2.2-9-3.8-15.4-3.8-11.8 0-19.7 6.4-19.7 16.6 0 9.8 6.1 14.7 16.2 19 6.8 3 10.1 5.7 10.1 10.1 0 4.3-3.6 7-9.4 7-5.5 0-10.5-2.2-14.5-5.3z" fill="#000"/></svg>
+            </div>
+            <span class="stack-name">Vanilla JS</span>
+            <span class="stack-tag">Modern JavaScript ESNext</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#3776AB" d="M63.7 7.7c-29.2 0-27.4 12.7-27.4 12.7l.1 13.1h27.9v3.9H23.5S7.7 35.6 7.7 64.6c0 29.1 13.8 28.1 13.8 28.1h8.2v-11.6s-.5-13.8 13.6-13.8h27.8s13.1-.2 13.1-12.7V20.4s1.7-12.7-20.5-12.7zm-14.7 8.3a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4z"/><path fill="#FFD43B" d="M64.3 120.3c29.2 0 27.4-12.7 27.4-12.7l-.1-13.1H63.7v-3.9h40.8s15.8 1.8 15.8-27.2c0-29.1-13.8-28.1-13.8-28.1h-8.2v11.6s.5 13.8-13.6 13.8H46.9s-13.1.2-13.1 12.7v24.2s-1.7 12.7 20.5 12.7zm14.7-8.3a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4z"/></svg>
+            </div>
+            <span class="stack-name">Python</span>
+            <span class="stack-tag">AI, ML &amp; Automation</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><ellipse cx="64" cy="64" rx="60" ry="34" fill="#777BB4"/><path fill="#fff" d="M37 53.5h9c4.2 0 7 1.2 8.3 3.6 1.4 2.4 1.2 5.8-.4 10.2-1.7 4.5-4.1 7.8-7.3 9.7-3.2 2-7.5 2.9-12.8 2.9h-5.8L37 53.5zm2.7 19.3h3.5c2.9 0 5.1-.5 6.7-1.6 1.6-1 2.9-2.8 3.8-5.2.9-2.5 1-4.3.4-5.5-.6-1.2-2.1-1.8-4.5-1.8h-4.3l-5.6 14.1zm20-19.3h8.3l-4 10.3h10.4l4-10.3h8.3l-10.4 26.4h-8.3l4.3-10.8H62.3l-4.3 10.8H49.7L60 53.5zm29 0h9c4.2 0 7 1.2 8.3 3.6 1.4 2.4 1.2 5.8-.4 10.2-1.7 4.5-4.1 7.8-7.3 9.7-3.2 2-7.5 2.9-12.8 2.9h-5.8L89 53.5zm2.7 19.3h3.5c2.9 0 5.1-.5 6.7-1.6 1.6-1 2.9-2.8 3.8-5.2.9-2.5 1-4.3.4-5.5-.6-1.2-2.1-1.8-4.5-1.8h-4.3l-5.6 14.1z"/></svg>
+            </div>
+            <span class="stack-name">PHP</span>
+            <span class="stack-tag">Backend Web Systems</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#00c4b3" d="M35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1 16.3-7.2-74.4-74.4z"/><path d="M27.7 93.4zm81.9 15.9l-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1 5.8-18.6z" fill="#22d3c5"/><path fill="#0075c9" d="M1.7 65.1C-.4 67.3.7 72 4 75.5l14.7 14.8 9.2 3.3c-.3-1.5-.7-3-.7-4.3l-.1-2.8-.2-59.8m82.7 82.6l7.2-16.4-23-65.6c-1.5-.3-3-.6-4.3-.7l-2.9-.1-59.6.1"/><path d="M109.6 109.3l17.7-5.8V54.8l-20.4-20.5c-3-3-8.3-5.8-13.2-7l23.1 65.6" fill="#00a8e1"/><path fill="#00c4b3" d="M90.5 18.2L75.7 3.5c-3.4-3.4-8-4.4-10.4-2.3L26.9 26.6h59.5l2.9.1c1.3 0 2.8.2 4.3.7l-3.1-9.2z"/></svg>
+            </div>
+            <span class="stack-name">Dart</span>
+            <span class="stack-tag">Cross-Platform Logic</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="stack-category-title reveal">FRAMEWORKS &amp; MODERN WEB</div>
+        <div class="stack-grid">
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#000"/><path fill="url(#nextg)" d="M86.8 97.4L45.4 44.5v35.3H38V30.6h8.8l43.2 55.4V30.6h7.4v66.8z"/><defs><linearGradient id="nextg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs></svg>
+            </div>
+            <span class="stack-name">Next.js</span>
+            <span class="stack-tag">SSR &amp; Full-Stack React</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="-11.5 -10.23174 23 20.46348"><circle cx="0" cy="0" r="2.05" fill="#61dafb"/><g stroke="#61dafb" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
+            </div>
+            <span class="stack-name">React.js</span>
+            <span class="stack-tag">Component-Driven UI</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#42B883" d="M78.8 10L64 35.6 49.2 10H0l64 110.8L128 10z"/><path fill="#35495E" d="M78.8 10L64 35.6 49.2 10H25.6L64 76.5 102.4 10z"/></svg>
+            </div>
+            <span class="stack-name">Vue.js</span>
+            <span class="stack-tag">Progressive Framework</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#FF2D20" d="M112.5 35.8l-43-24.8c-3.4-2-7.6-2-11 0l-43 24.8c-3.4 2-5.5 5.6-5.5 9.5v47.4c0 3.9 2.1 7.5 5.5 9.5l43 24.8c1.7 1 3.6 1.5 5.5 1.5s3.8-.5 5.5-1.5l43-24.8c3.4-2 5.5-5.6 5.5-9.5V45.3c0-3.9-2.1-7.5-5.5-9.5zm-5.5 56.9l-43 24.8-43-24.8V45.3l43-24.8 43 24.8v47.4z"/><path fill="#FF2D20" d="M64 43.5L42.5 56v25.2l21.5 12.4 21.5-12.4V56L64 43.5zm13.5 33.4L64 84.4l-13.5-7.8V61.1L64 53.3l13.5 7.8v15.8z"/></svg>
+            </div>
+            <span class="stack-name">Laravel</span>
+            <span class="stack-tag">PHP MVC Architecture</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><path fill="#38BDF8" d="M64 34.3c-14.7 0-23.9 7.3-27.4 22 5.5-7.3 12.2-10.1 20.1-8.2 4.5 1 7.7 4.3 11.3 7.9C73.9 61.9 81.3 69 96 69c14.7 0 23.9-7.3 27.4-22-5.5 7.3-12.2 10.1-20.1 8.2-4.5-1-7.7-4.3-11.3-7.9-5.9-5.9-13.3-13-28-13zM32 69c-14.7 0-23.9 7.3-27.4 22 5.5-7.3 12.2-10.1 20.1-8.2 4.5 1 7.7 4.3 11.3 7.9C41.9 96.6 49.3 103.7 64 103.7c14.7 0 23.9-7.3 27.4-22-5.5 7.3-12.2 10.1-20.1 8.2-4.5-1-7.7-4.3-11.3-7.9C64.1 64.1 56.7 57 42 57c-3.7 0-7 1.2-10 3.5v8.5z"/></svg>
+            </div>
+            <span class="stack-name">Tailwind CSS</span>
+            <span class="stack-tag">Utility-First Styling</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><rect width="128" height="128" rx="28" fill="#7952B3"/><path d="M42 32h27.8c7.5 0 13.2 1.8 17.1 5.3 3.9 3.5 5.8 8.4 5.8 14.6 0 4.1-.9 7.6-2.7 10.5-1.8 2.9-4.5 5.1-8.1 6.6 4.9 1.4 8.7 4 11.3 7.6 2.6 3.6 3.9 8.2 3.9 13.8 0 7-2.3 12.5-6.9 16.4-4.6 3.9-11.2 5.9-19.8 5.9H42V32zm14.8 30.5h11.9c3.8 0 6.6-.8 8.4-2.5 1.8-1.7 2.7-4.1 2.7-7.2 0-3.2-1-5.6-2.9-7.3-1.9-1.7-4.8-2.5-8.7-2.5H56.8v19.5zm0 39.3h14.5c4.1 0 7.3-1 9.5-2.9s3.3-4.9 3.3-8.8c0-3.8-1.1-6.7-3.4-8.7-2.3-2-5.6-3-9.9-3H56.8v23.4z" fill="#fff"/></svg>
+            </div>
+            <span class="stack-name">Bootstrap</span>
+            <span class="stack-tag">Responsive Grid &amp; UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="stack-category-title reveal">APLIKASI MOBILE &amp; HYBRID</div>
+        <div class="stack-grid">
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><polygon points="76.8,11.2 20.8,67.2 38.4,84.8 112,11.2" fill="#47C5FB"/><polygon points="76.8,72 38.4,110.4 56,128 112,72" fill="#00569B"/><polygon points="56,89.6 74.4,108 112,70.4 93.6,52" fill="#00B5F8"/></svg>
+            </div>
+            <span class="stack-name">Flutter</span>
+            <span class="stack-tag">Native Android &amp; iOS Apps</span>
+          </div>
+
+          <div class="stack-card reveal" data-tilt>
+            <div class="stack-icon">
+              <svg viewBox="0 0 128 128"><rect width="128" height="128" rx="24" fill="#119EFF"/><path d="M64 24a40 40 0 1 0 40 40 8 8 0 0 0-16 0 24 24 0 1 1-24-24 8 8 0 0 0 0-16zm26.9 14.6a8 8 0 0 0-11.3 11.3 40 40 0 0 1 0 28.2 8 8 0 1 0 15 5.4 56 56 0 0 0 0-39.6 8 8 0 0 0-3.7-5.3z" fill="#fff"/></svg>
+            </div>
+            <span class="stack-name">Capacitor</span>
+            <span class="stack-tag">Web-to-Mobile Cross Platform</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="section-header reveal">
+      <span class="section-tag">03 / GITHUB SHOWCASE</span>
+      <h2 class="section-title chrome-text">SEMUA PROYEK <em>GITHUB</em></h2>
+      <p class="section-sub">Koleksi proyek nyata yang menggabungkan AI, cyber defense, PWA darurat, dan web modern dari GitHub saya: Asya-Code2146.</p>
+    </div>
+
+    <div class="projects-featured-grid">
+      <article class="project-card reveal" data-tilt data-repo-name="Webshield-AI">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-num">01</span>
+          <span class="card-status">CYBER DEFENSE</span>
+        </div>
+        <div class="card-visual">
+          <svg viewBox="0 0 200 200">
+            <path d="M100 20 L170 50 L170 110 Q170 160 100 180 Q30 160 30 110 L30 50 Z" fill="rgba(56,189,248,0.18)" stroke="#38bdf8" stroke-width="2.5"/>
+            <circle cx="100" cy="100" r="35" fill="none" stroke="#f472b6" stroke-width="2"/>
+            <path d="M100 75 L100 125 M75 100 L125 100" stroke="#38bdf8" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Webshield-AI</h3>
+        <p class="card-desc">Autonomous cyber defense &amp; AI-powered web vulnerability assessment suite built for Kartika Cyber Hackathon 2026. Sistem pertahanan siber otonom untuk mendeteksi kerentanan web tingkat lanjut.</p>
+        <div class="card-tags">
+          <span>AI Security</span>
+          <span>TypeScript</span>
+          <span>Hackathon</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-event">Kartika Cyber Hackathon 2026</span>
+          <a href="https://github.com/Asya-Code2146/Webshield-AI" target="_blank" rel="noopener" class="card-link">GITHUB <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt data-repo-name="Trace-AI">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-num">02</span>
+          <span class="card-status">AI FRAUD DETECTION</span>
+        </div>
+        <div class="card-visual">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="65" fill="none" stroke="#60a5fa" stroke-width="2"/>
+            <circle cx="100" cy="100" r="45" fill="none" stroke="#f472b6" stroke-width="2" opacity="0.8"/>
+            <line x1="100" y1="35" x2="100" y2="165" stroke="#38bdf8" stroke-width="1.5"/>
+            <line x1="35" y1="100" x2="165" y2="100" stroke="#38bdf8" stroke-width="1.5"/>
+            <circle cx="130" cy="70" r="6" fill="#fff"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Trace-AI</h3>
+        <p class="card-desc">AI cerdas yang dirancang untuk mendeteksi tingkat penipuan dan scam secara real-time. Memprediksi indikasi kecurangan digital menggunakan model pembelajaran mesin.</p>
+        <div class="card-tags">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Scam Detector</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-event">Safety Intelligence</span>
+          <a href="https://github.com/Asya-Code2146/Trace-AI" target="_blank" rel="noopener" class="card-link">GITHUB <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt data-repo-name="Siaga-Gempa">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-num">03</span>
+          <span class="card-status">EMERGENCY PWA</span>
+        </div>
+        <div class="card-visual">
+          <svg viewBox="0 0 200 200">
+            <path d="M30 100 Q50 60 70 100 T110 100 T150 100 T170 100" stroke="#38bdf8" stroke-width="3" fill="none"/>
+            <path d="M30 130 Q50 100 70 130 T110 130 T150 130 T170 130" stroke="#f472b6" stroke-width="2" fill="none" opacity="0.7"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Siaga-Gempa</h3>
+        <p class="card-desc">Emergency earthquake Progressive Web App (PWA) yang mengirimkan lokasi pengguna via SMS darurat ketika terjadi pemadaman jaringan telekomunikasi pasca gempa bumi.</p>
+        <div class="card-tags">
+          <span>JavaScript</span>
+          <span>PWA</span>
+          <span>SMS Gateway</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-event">Disaster Preparedness</span>
+          <a href="https://github.com/Asya-Code2146/Siaga-Gempa" target="_blank" rel="noopener" class="card-link">GITHUB <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt data-repo-name="Medisca">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-num">04</span>
+          <span class="card-status">HEALTHCARE SYS</span>
+        </div>
+        <div class="card-visual">
+          <svg viewBox="0 0 200 200">
+            <rect x="40" y="40" width="120" height="120" rx="20" fill="none" stroke="#60a5fa" stroke-width="3"/>
+            <path d="M100 65 L100 135 M65 100 L135 100" stroke="#f472b6" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Medisca</h3>
+        <p class="card-desc">Sistem informasi manajemen kesehatan dan administrasi medis berbasis PHP &amp; Laravel. Menyediakan pencatatan data pasien, resep obat, serta rekam medis terpadu yang aman.</p>
+        <div class="card-tags">
+          <span>PHP</span>
+          <span>Laravel</span>
+          <span>Medical System</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-event">HealthTech Architecture</span>
+          <a href="https://github.com/Asya-Code2146/Medisca" target="_blank" rel="noopener" class="card-link">GITHUB <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt data-repo-name="tradevision">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-num">05</span>
+          <span class="card-status">FINTECH ANALYTICS</span>
+        </div>
+        <div class="card-visual">
+          <svg viewBox="0 0 200 200">
+            <polyline points="30,140 60,110 90,125 120,70 150,85 170,40" fill="none" stroke="#38bdf8" stroke-width="3"/>
+            <circle cx="170" cy="40" r="5" fill="#f472b6"/>
+          </svg>
+        </div>
+        <h3 class="card-title">tradevision</h3>
+        <p class="card-desc">Platform analitik pasar dan visualisasi grafik keuangan interaktif berbasis TypeScript. Mengintegrasikan algoritma indikator tren dan eksekusi strategi perdagangan terarah.</p>
+        <div class="card-tags">
+          <span>TypeScript</span>
+          <span>Market Vision</span>
+          <span>Analytics</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-event">Financial Dashboard</span>
+          <a href="https://github.com/Asya-Code2146/tradevision" target="_blank" rel="noopener" class="card-link">GITHUB <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tilt data-repo-name="voice-code-agent">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-num">06</span>
+          <span class="card-status">VOICE AI AGENT</span>
+        </div>
+        <div class="card-visual">
+          <svg viewBox="0 0 200 200">
+            <rect x="30" y="80" width="8" height="40" fill="#38bdf8"/>
+            <rect x="50" y="60" width="8" height="80" fill="#60a5fa"/>
+            <rect x="70" y="45" width="8" height="110" fill="#f472b6"/>
+            <rect x="90" y="35" width="8" height="130" fill="#fff"/>
+            <rect x="110" y="45" width="8" height="110" fill="#f472b6"/>
+            <rect x="130" y="60" width="8" height="80" fill="#60a5fa"/>
+            <rect x="150" y="80" width="8" height="40" fill="#38bdf8"/>
+          </svg>
+        </div>
+        <h3 class="card-title">voice-code-agent</h3>
+        <p class="card-desc">Agen pengembang cerdas yang mampu menerjemahkan perintah suara manusia menjadi blok kode fungsional. Mempermudah navigasi editor dan pembuatan program secara hands-free.</p>
+        <div class="card-tags">
+          <span>JavaScript</span>
+          <span>Voice-to-Code</span>
+          <span>AI Agent</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-event">Developer Innovation</span>
+          <a href="https://github.com/Asya-Code2146/voice-code-agent" target="_blank" rel="noopener" class="card-link">GITHUB <span>→</span></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="repos-section-wrap reveal">
+      <div class="repos-header">
+        <div class="repos-filter-bar">
+          <button type="button" class="repo-filter-btn active" data-filter="all">SEMUA REPOSITORI (<span id="github-repo-count">15</span>)</button>
+          <button type="button" class="repo-filter-btn" data-filter="ai">AI &amp; SECURITY</button>
+          <button type="button" class="repo-filter-btn" data-filter="web">WEB &amp; PWA</button>
+          <button type="button" class="repo-filter-btn" data-filter="tools">SYSTEM &amp; CREATIVE</button>
+        </div>
+        <div class="repo-search-box">
+          <input type="text" class="repo-search-input" id="repo-search-input" placeholder="Cari repositori GitHub...">
+          <svg class="repo-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+      </div>
+
+      <div class="repos-grid">
+        <div class="repo-card reveal" data-category="ai security" data-repo-name="Webshield-AI" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Webshield-AI" target="_blank" rel="noopener">Webshield-AI</a></h4>
+            <span class="repo-folder-icon">🛡️</span>
+          </div>
+          <p class="repo-card-desc">Autonomous cyber defense &amp; AI-powered web vulnerability assessment suite built for Kartika Cyber Hackathon 2026.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">TypeScript</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="ai" data-repo-name="Trace-AI" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Trace-AI" target="_blank" rel="noopener">Trace-AI</a></h4>
+            <span class="repo-folder-icon">🔍</span>
+          </div>
+          <p class="repo-card-desc">AI yang bisa mendeteksi dan menganalisis tingkat penipuan/scam secara cerdas melalui indikator data komprehensif.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">Python</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web pwa" data-repo-name="Siaga-Gempa" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Siaga-Gempa" target="_blank" rel="noopener">Siaga-Gempa</a></h4>
+            <span class="repo-folder-icon">🚨</span>
+          </div>
+          <p class="repo-card-desc">Emergency earthquake PWA that sends your location via SMS during network outages. Lightweight and installable on any device.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">JavaScript</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web tools" data-repo-name="Medisca" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Medisca" target="_blank" rel="noopener">Medisca</a></h4>
+            <span class="repo-folder-icon">🏥</span>
+          </div>
+          <p class="repo-card-desc">Healthcare &amp; medical management web system developed with PHP and Laravel backend architecture.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">PHP</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web tools" data-repo-name="tradevision" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/tradevision" target="_blank" rel="noopener">tradevision</a></h4>
+            <span class="repo-folder-icon">📈</span>
+          </div>
+          <p class="repo-card-desc">Trading &amp; financial analytics web application engineered with TypeScript and responsive charting systems.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">TypeScript</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="ai tools" data-repo-name="voice-code-agent" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/voice-code-agent" target="_blank" rel="noopener">voice-code-agent</a></h4>
+            <span class="repo-folder-icon">🎙️</span>
+          </div>
+          <p class="repo-card-desc">Voice-controlled intelligent programming assistant converting voice prompts directly into executable source code.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">JavaScript</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="ai web" data-repo-name="UMKM-AI" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/UMKM-AI" target="_blank" rel="noopener">UMKM-AI</a></h4>
+            <span class="repo-folder-icon">🏪</span>
+          </div>
+          <p class="repo-card-desc">AI platform empowering Indonesian MSMEs with automated business ideas, marketing copy, and financial strategies.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">CSS</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="ai tools" data-repo-name="AI-Profilling-System" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/AI-Profilling-System" target="_blank" rel="noopener">AI-Profilling-System</a></h4>
+            <span class="repo-folder-icon">📊</span>
+          </div>
+          <p class="repo-card-desc">Automated dynamic profiling system powered by artificial intelligence algorithms and behavioral data modeling.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">CSS</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web tools" data-repo-name="Starnet-Orbit" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Starnet-Orbit" target="_blank" rel="noopener">Starnet-Orbit</a></h4>
+            <span class="repo-folder-icon">🌌</span>
+          </div>
+          <p class="repo-card-desc">Interactive orbital space visualizer and web network monitoring utility designed for real-time telemetry.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">JavaScript</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web" data-repo-name="ARpixel" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/ARpixel" target="_blank" rel="noopener">ARpixel</a></h4>
+            <span class="repo-folder-icon">🎨</span>
+          </div>
+          <p class="repo-card-desc">Web-based Augmented Reality and pixel-art canvas playground delivering immersive web graphics experiences.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">HTML</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web" data-repo-name="Spotify_Song" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Spotify_Song" target="_blank" rel="noopener">Spotify_Song</a></h4>
+            <span class="repo-folder-icon">🎵</span>
+          </div>
+          <p class="repo-card-desc">Sleek music player interface with audio visualization and dynamic playback controls.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">CSS</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="ai" data-repo-name="AIVC_BOOTCAMP" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/AIVC_BOOTCAMP" target="_blank" rel="noopener">AIVC_BOOTCAMP</a></h4>
+            <span class="repo-folder-icon">🤖</span>
+          </div>
+          <p class="repo-card-desc">Machine learning, computer vision, and deep algorithmic implementations completed during AI Bootcamp training.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">HTML</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="ai web" data-repo-name="Portofolio_Project_AI" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Portofolio_Project_AI" target="_blank" rel="noopener">Portofolio_Project_AI</a></h4>
+            <span class="repo-folder-icon">💡</span>
+          </div>
+          <p class="repo-card-desc">AI-themed portfolio demonstration showcasing cutting-edge interactive algorithms and creative web design.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">HTML</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="web tools" data-repo-name="matrikulasi_Cloud-Savvy-Web.net_Amrina-Rasyada" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/matrikulasi_Cloud-Savvy-Web.net_Amrina-Rasyada" target="_blank" rel="noopener">Cloud-Savvy-Web</a></h4>
+            <span class="repo-folder-icon">☁️</span>
+          </div>
+          <p class="repo-card-desc">Matrikulasi dan arsitektur komputasi awan berkinerja tinggi untuk web modern di lingkungan terdistribusi.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">HTML</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-card reveal" data-category="tools" data-repo-name="Asya-Code2146" data-tilt>
+          <div class="repo-card-top">
+            <h4 class="repo-card-title"><a href="https://github.com/Asya-Code2146/Asya-Code2146" target="_blank" rel="noopener">Asya-Code2146</a></h4>
+            <span class="repo-folder-icon">⚡</span>
+          </div>
+          <p class="repo-card-desc">GitHub Profile repository &amp; personal configuration hub powering my open-source development ecosystem.</p>
+          <div class="repo-card-meta">
+            <span class="repo-lang-pill"><span class="repo-lang-dot"></span><span class="repo-live-lang">Markdown</span></span>
+            <div class="repo-stats">
+              <span class="repo-stat-item">⭐ <span class="repo-star-count">0</span></span>
+              <span class="repo-stat-item">🍴 <span class="repo-fork-count">0</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section hobbies">
+    <div class="section-header reveal">
+      <span class="section-tag">04 / PASSIONS &amp; LIFE</span>
+      <h2 class="section-title chrome-text">HOBI &amp; <em>AKTIVITAS</em></h2>
+      <p class="section-sub">Keseimbangan antara logika kode, olahraga lapangan, nada melodi, serta eksplorasi bahasa asing dan literasi.</p>
+    </div>
+
+    <div class="hobbies-grid">
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">🏀</span>
+        <div class="hobby-tag">SPORT &amp; STRATEGY</div>
+        <h3 class="hobby-title">Main Basket</h3>
+        <p class="hobby-desc">Menyalurkan energi dan menjaga ketahanan fisik di lapangan basket. Melatih fokus cepat, refleks tajam, serta kerja sama tim yang solid.</p>
+      </div>
+
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">🎸</span>
+        <div class="hobby-tag">MUSIC &amp; CREATIVITY</div>
+        <h3 class="hobby-title">Main Gitar</h3>
+        <p class="hobby-desc">Memetik dawai akustik dan ritme melodi untuk merelaksasi pikiran setelah berjam-jam berkutat di depan editor kode pemrograman.</p>
+      </div>
+
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">📚</span>
+        <div class="hobby-tag">KNOWLEDGE &amp; BOOKS</div>
+        <h3 class="hobby-title">Membaca Buku</h3>
+        <p class="hobby-desc">Menenggelamkan diri dalam buku teknologi, sains komputasi, dan literatur yang memperluas sudut pandang serta pemahaman dunia.</p>
+      </div>
+
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">😴</span>
+        <div class="hobby-tag">RECHARGE &amp; REST</div>
+        <h3 class="hobby-title">Tidur &amp; Istirahat</h3>
+        <p class="hobby-desc">Istirahat berkualitas untuk me-refresh memori otak, meregenerasi energi kreatif, dan menyambut hari baru dengan ide-ide coding segar.</p>
+      </div>
+
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">🍜</span>
+        <div class="hobby-tag">CULINARY &amp; FUEL</div>
+        <h3 class="hobby-title">Makan &amp; Kuliner</h3>
+        <p class="hobby-desc">Menikmati berbagai sajian kuliner lezat yang menjadi bahan bakar utama semangat beraktivitas dan menyelesaikan tantangan proyek digital.</p>
+      </div>
+
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">🇨🇳</span>
+        <div class="hobby-tag">LANGUAGES &amp; GLOBAL</div>
+        <h3 class="hobby-title">Bahasa China &amp; Asing</h3>
+        <p class="hobby-desc">Aktif mendalami bahasa Mandarin (中文) dan bahasa asing lainnya guna memperluas komunikasi internasional serta akses dokumentasi global.</p>
+      </div>
+
+      <div class="hobby-card reveal" data-tilt>
+        <span class="hobby-icon">💻</span>
+        <div class="hobby-tag">DEV LIFE &amp; CRAFT</div>
+        <h3 class="hobby-title">CODING</h3>
+        <p class="hobby-desc">Passion terbesar saya setiap hari. Merancang arsitektur sistem, membedah algoritma kecerdasan buatan, dan membangun aplikasi masa depan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-header reveal">
+      <span class="section-tag">05 / GET IN TOUCH</span>
+      <h2 class="section-title chrome-text">HUBUNGI <em>SAYA</em></h2>
+      <p class="section-sub">Mari terhubung dan berkolaborasi bersama Amrina Rasyada untuk mewujudkan karya teknologi berikutnya.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a href="mailto:amrinarasya7@gmail.com" class="contact-card reveal magnetic" data-tilt>
+        <div class="contact-icon icon-gmail">
+          <svg viewBox="0 0 24 24"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.601l8.073-6.108C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">EMAIL</span>
+          <span class="contact-value">amrinarasya7@gmail.com</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+
+      <a href="https://wa.me/6281360946051" target="_blank" rel="noopener" class="contact-card reveal magnetic" data-tilt>
+        <div class="contact-icon icon-whatsapp">
+          <svg viewBox="0 0 32 32"><path fill="#25D366" d="M16.004 0h-.008C7.176 0 .004 7.174.004 15.99c0 3.122.918 6.028 2.498 8.476L.06 31.96l6.662-1.748a15.9 15.9 0 0 0 9.278 2.95h.008c8.816 0 15.99-7.174 15.99-15.99C32 7.174 24.82 0 16.004 0zm0 28.357h-.006a13.246 13.246 0 0 1-6.752-1.85l-.484-.288-5.02 1.316 1.34-4.898-.314-.5a13.21 13.21 0 0 1-2.028-7.054c0-7.31 5.95-13.258 13.27-13.258 3.542 0 6.872 1.382 9.376 3.888a13.176 13.176 0 0 1 3.886 9.378c-.004 7.31-5.954 13.266-13.268 13.266zm7.276-9.926c-.398-.2-2.354-1.162-2.72-1.296-.366-.134-.632-.2-.898.2-.266.398-1.032 1.296-1.266 1.562-.234.266-.466.3-.864.1-.4-.2-1.686-.622-3.214-1.984-1.188-1.06-1.99-2.37-2.222-2.768-.234-.4-.026-.616.174-.814.18-.178.4-.466.6-.7.2-.234.266-.4.4-.666.134-.266.066-.5-.034-.7-.1-.2-.898-2.166-1.232-2.966-.324-.78-.652-.674-.898-.686l-.766-.014c-.266 0-.7.1-1.066.5-.366.4-1.4 1.366-1.4 3.332s1.432 3.866 1.632 4.132c.2.266 2.82 4.31 6.832 6.04.954.412 1.7.658 2.282.842.958.306 1.832.262 2.522.16.77-.116 2.354-.962 2.686-1.892.334-.93.334-1.728.234-1.892-.1-.166-.366-.266-.766-.466z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">WHATSAPP</span>
+          <span class="contact-value">+62 813 6094 6051</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/Asya-Code2146" target="_blank" rel="noopener" class="contact-card reveal magnetic" data-tilt>
+        <div class="contact-icon icon-github">
+          <svg viewBox="0 0 24 24"><path fill="#ffffff" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.48 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">GITHUB</span>
+          <span class="contact-value">github.com/Asya-Code2146</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/amrina-rasyada21" target="_blank" rel="noopener" class="contact-card reveal magnetic" data-tilt>
+        <div class="contact-icon icon-linkedin">
+          <svg viewBox="0 0 24 24"><path fill="#ffffff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">LINKEDIN</span>
+          <span class="contact-value">Amrina Rasyada</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+
+      <a href="https://www.instagram.com/amrinarasyada_.7" target="_blank" rel="noopener" class="contact-card reveal magnetic" data-tilt>
+        <div class="contact-icon icon-instagram">
+          <svg viewBox="0 0 24 24"><defs><linearGradient id="igG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FEDA77"/><stop offset="30%" stop-color="#F58529"/><stop offset="60%" stop-color="#DD2A7B"/><stop offset="100%" stop-color="#8134AF"/></linearGradient></defs><path fill="url(#igG)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">INSTAGRAM</span>
+          <span class="contact-value">@amrinarasyada_.7</span>
+        </div>
+        <span class="contact-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="contact-cta reveal" data-tilt>
+      <div class="cta-text">Punya Proyek Cerdas atau Ingin Berkolaborasi?</div>
+      <a href="mailto:amrinarasya7@gmail.com" class="btn btn-primary magnetic">
+        <span>KIRIM EMAIL SEKARANG</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">AR</span>
+      <span>AMRINA RASYADA</span>
+    </div>
+    <div class="footer-copy">
+      Future Web Developer &amp; AI Engineer &nbsp;|&nbsp; &copy; 2026 Amrina Rasyada
+    </div>
+  </div>
+</footer>
+
+<script src="js/intro.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
