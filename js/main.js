@@ -348,7 +348,7 @@ const Cursor = {
     this.dot = document.querySelector('.cursor-dot');
     this.ring = document.querySelector('.cursor-ring');
     if (!this.dot || !this.ring) return;
-    if (window.matchMedia('(hover:none)').matches) return;
+    if (window.matchMedia('(hover:none)').matches || window.innerWidth <= 992) return;
 
     window.addEventListener('mousemove', (e) => {
       this.targetX = e.clientX;
@@ -485,7 +485,7 @@ const ScrollProgress = {
 
 const Tilt = {
   init() {
-    if (window.matchMedia('(hover:none)').matches) return;
+    if (window.matchMedia('(hover:none)').matches || window.innerWidth <= 992) return;
     document.querySelectorAll('[data-tilt]').forEach(el => {
       let raf = null;
       el.addEventListener('mousemove', (e) => {
@@ -511,7 +511,7 @@ const Tilt = {
 
 const Magnetic = {
   init() {
-    if (window.matchMedia('(hover:none)').matches) return;
+    if (window.matchMedia('(hover:none)').matches || window.innerWidth <= 992) return;
     document.querySelectorAll('.magnetic').forEach(el => {
       el.addEventListener('mousemove', (e) => {
         const rect = el.getBoundingClientRect();
